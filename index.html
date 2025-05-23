@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Developer Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSans.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/webfontworld/tanada/Tanada.css">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <div class="logo">
+        <h1>takeitEasyhwan</h1>
+      </div>
+      
+      <nav>
+        <ul>
+          <li><a href="#skills"><span class="icon">🔧</span> 기술 스택</a></li>
+          <li><a href="#experience"><span class="icon">💼</span> 경력</a></li>
+          <li><a href="#projects"><span class="icon">📂</span> 프로젝트</a></li>
+          <li><a href="#blog"><span class="icon">📖</span> 블로그</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="hero">
+    <video id="hero-video" autoplay muted loop playsinline>
+      <source src="source/bgvideo.mp4" type="video/mp4">
+    </video>
+    <div id="particles-js"></div>
+    <div class="hero-content">
+      <h2>호기심 많은 개발자</h2>
+      <p>호기심을 원동력 삼아 끊임없이 도전하며 나아가는 주니어 개발자입니다</p>
+      
+      <button id="job-button">WHO ARE YOU? <span class="chevron">▼</span></button>
+      
+      <div id="job-details" class="hidden">
+        <div class="job-card">
+          <div class="job-header">
+            <span class="job-icon">💬</span>
+            <h3>함께 성장하는 개발자</h3>
+          </div>
+          <p>학교 동기들과 매주 1회 알고리즘, CS 스터디를 진행했습니다.</p>
+        </div>
+        
+        <div class="job-card">
+          <div class="job-header">
+            <span class="job-icon">⚡</span>
+            <h3>실무 중심의 문제 해결</h3>
+          </div>
+          <p>인턴 과정에서 Salesforce 기반의 클라우드 개발 환경에서, 기업의 요구사항에 맞춰 API 개발, 트리거 수정, 인터페이스 구축 등의 실무를 경험했습니다.</p>
+        </div>
+        
+        <div class="job-card">
+          <div class="job-header">
+            <span class="job-icon">🚀</span>
+            <h3>새로운 분야에 도전</h3>
+          </div>
+          <p>AI, 자연어처리 등 다양한 분야에 관심을 갖고 학습해왔으며, KoBART 기반 텍스트 요약 프로젝트를 통해 실제 서비스에 적용 가능한 기술을 탐구했습니다.</p>
+        </div>
+        
+        <div class="job-card">
+          <div class="job-header">
+            <span class="job-icon">👥</span>
+            <h3>팀 협업 및 기술 결정 주도</h3>
+          </div>
+          <p>다양한 프로젝트에서 팀장을 맡아 프로젝트의 전반적인 기획과 기술 스택 선정, 역할 분담을 주도했으며, 팀원들과 긴밀히 소통하며 성공적으로 결과물을 완성했습니다.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="section-container">
+      <h3> 기술 스택</h3>
+      
+      <div class="skills-grid">
+        <div class="skill-card">
+          <img src="source/java.png" alt="JAVA" class="skill-icon">
+          <div class="skill-name">JAVA</div>
+        </div>
+        
+        <div class="skill-card">
+          <img src="source/kotlin.png" alt="KOTLIN" class="skill-icon">
+          <div class="skill-name">KOTLIN</div>
+        </div>
+        
+        <div class="skill-card">
+          <img src="source/python.png" alt="PYTHON" class="skill-icon">
+          <div class="skill-name">PYTHON</div>
+        </div>
+        
+        <div class="skill-card">
+          <img src="source/C.png" alt="C" class="skill-icon">
+          <div class="skill-name">C</div>
+        </div>
+        
+        <div class="skill-card">
+          <img src="source/C++.png" alt="C++" class="skill-icon">
+          <div class="skill-name">C++</div>
+        </div>
+        
+        <div class="skill-card">
+          <img src="source/HTML.png" alt="HTML5" class="skill-icon">
+          <div class="skill-name">HTML5</div>
+        </div>
+        
+        <div class="skill-card">
+          <img src="source/CSS.png" alt="CSS" class="skill-icon">
+          <div class="skill-name">CSS</div>
+        </div>
+                
+        <div class="skill-card">
+          <img src="source/javascript.png" alt="JAVASCRIPT" class="skill-icon">
+          <div class="skill-name">JAVASCRIPT</div>
+        </div>
+        
+        <div class="skill-card">
+          <img src="source/salesforce.png" alt="SALESFORCE" class="skill-icon">
+          <div class="skill-name">SALESFORCE</div>
+        </div>
+        
+        <div class="skill-card">
+          <img src="source/APEX.png" alt="APEX" class="skill-icon">
+          <div class="skill-name">APEX</div>
+        </div>
+        
+        <div class="skill-card">
+          <img src="source/aws.png" alt="AWS" class="skill-icon">
+          <div class="skill-name">AWS</div>
+        </div>
+        
+        <div class="skill-card">
+          <img src="source/github.png" alt="GITHUB" class="skill-icon">
+          <div class="skill-name">GITHUB</div>
+        </div>
+        
+        <div class="skill-card">
+          <img src="source/git.png" alt="GIT" class="skill-icon">
+          <div class="skill-name">GIT</div>
+        </div>
+
+        <div class="skill-card">
+          <img src="source/notion.png" alt="NOTION" class="skill-icon">
+          <div class="skill-name">NOTION</div>
+        </div>
+
+        <div class="skill-card">
+          <img src="source/slack.png" alt="SLACK" class="skill-icon">
+          <div class="skill-name">SLACK</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <div class="section-container">
+      <h3>경력</h3>
+
+      <!-- 실전 경험 -->
+      <h4 class="experience-group-title">실전 경험</h4>
+      <div class="experience-list">
+        <div class="experience-card">
+          <div class="experience-header">
+            <h4>대유넥스티어 인턴십</h4>
+            <span class="experience-period">2023.07.24 ~ 2023.12.29</span>
+          </div>
+          <p class="experience-position">Salesforce 기반 클라우드 개발</p>
+          <p class="experience-description">
+            - Salesforce 기반 클라우드 환경에서 API 개발, 트리거 수정, 인터페이스 구축<br>
+            - 기업 요구사항에 따른 클라우드 시스템 유지보수 등 실무 경험
+          </p>
+        </div>
+      </div>
+
+      <!-- 교육 -->
+      <h4 class="experience-group-title">교육</h4>
+      <div class="experience-list">
+        <div class="experience-card">
+          <div class="experience-header">
+            <h4>신한투자증권 프로디지털아카데미 6기</h4>
+            <span class="experience-period">2025.04.22 ~ (진행중)</span>
+          </div>
+          <p class="experience-position">클라우드 기반 금융 ICT 교육 이수</p>
+          <p class="experience-description hidden">
+            - AWS 기반 클라우드 개발 환경 이해 및 프로젝트 수행
+          </p>
+        </div>
+        <div class="experience-card">
+          <div class="experience-header">
+            <h4>건국대학교 졸업</h4>
+            <span class="experience-period">2018.03 ~ 2024.02</span>
+          </div>
+          <p class="experience-position">컴퓨터공학부 전공</p>
+          <p class="experience-description hidden">
+            - Java, Kotlin, C 등 심화 프로그래밍 언어 학습<br>
+            - 자료구조, 알고리즘, 컴퓨터 네트워크, 운영체제, 컴퓨터 구조 등 핵심 CS 지식 습득<br>
+            - 자연어처리, 데이터베이스 등 심화 전공 분야 학습<br>
+            - 전공기초프로젝트 1·2, 산학협력프로젝트 1·2, 졸업프로젝트 등 다양한 팀 프로젝트 수행<br> 
+            - 과 학생회장 및 교내 IT 동아리 "비빔밥" 파트장 역임
+          </p>
+        </div>
+        <div class="experience-card">
+          <div class="experience-header">
+            <h4>한국디지털미디어고등학교 졸업</h4>
+            <span class="experience-period">2015.03 ~ 2018.02</span>
+          </div>
+          <p class="experience-position">웹프로그래밍과 전공</p>
+          <p class="experience-description hidden">
+            - C, Java, 웹 등 기초 프로그래밍 언어 학습<br>
+            - 마이크로프로세서, 데이터 분석, 정보통신 등 특화 전공 과목 이수
+          </p>
+        </div>
+      </div>
+
+      <!-- 자격증 -->
+      <h4 class="experience-group-title">자격증</h4>
+      <div class="experience-list">
+        <div class="experience-card">
+          <div class="experience-header">
+            <h4>OPIC</h4>
+            <span class="experience-period">2025.04.17</span>
+          </div>
+          <p class="experience-position">Intermediate High</p>
+        </div>
+        <div class="experience-card">
+          <div class="experience-header">
+            <h4>정보처리기사</h4>
+            <span class="experience-period">2025.08.15</span>
+          </div>
+          <p class="experience-position">정보처리기사 필기/실기</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="section-container">
+      <h3> 프로젝트</h3>
+      
+      <div class="project-card">
+        <h4>Qwe</h4>
+        <p class="project-role">PM, Android Developer, NLP Model Training (KoBART)</p>
+        <p class="project-description">QR 코드로 스캔한 본문을 요약하고 유해 콘텐츠를 차단하는 모바일 앱 'QweR'을 개발했습니다. 프론트엔드(Android)와 KoBART 기반 요약 모델 구축을 맡았으며, 실제 앱을 통해 요약된 콘텐츠를 보호적으로 서비스할 수 있는 앱 개발을 주도했습니다.</p>
+        
+        <div class="project-details">
+          <h5>주요 기능 및 담당 업무</h5>
+          <ul>
+            <li>Kotlin 기반 Android 프론트엔드 개발 및 UI/UX 구성</li>
+            <li>KoBART 기반 요약 모델 구축 및 학습</li>
+            <li>기사 데이터 수집 → 모델 재학습 → 정확도/속도 개선</li>
+            <li>ChatGPT API와의 성능 비교 및 통합 설계</li>
+            <li>사용자 설정에 따라 KoBART/ChatGPT 선택 기능</li>
+            <li>팀 협업 및 기술 결정 주도</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="blog">
+    <div class="section-container">
+      <h3> 블로그</h3>
+      
+      <div class="blog-grid">
+        <div class="blog-card">
+          <h4>KoBART를 활용한 텍스트 요약</h4>
+          <p class="blog-date">2023.12.15</p>
+          <p class="blog-excerpt">자연어 처리 모델을 활용한 텍스트 요약 시스템 개발 경험</p>
+        </div>
+        
+        <div class="blog-card">
+          <h4>Salesforce API 개발 가이드</h4>
+          <p class="blog-date">2023.10.10</p>
+          <p class="blog-excerpt">인턴십 기간 동안 경험한 Salesforce API 개발 과정과 팁</p>
+        </div>
+        
+        <div class="blog-card">
+          <h4>알고리즘 스터디 회고</h4>
+          <p class="blog-date">2023.08.05</p>
+          <p class="blog-excerpt">매주 진행한 알고리즘 스터디의 성과와 학습 방법</p>
+        </div>
+        
+        <div class="blog-card">
+          <h4>Android 앱 개발 - UI/UX 디자인</h4>
+          <p class="blog-date">2023.06.28</p>
+          <p class="blog-excerpt">QweR 앱 개발 과정에서의 사용자 경험 설계 전략</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-logo">
+        <h2>takeitEasyhwan</h2>
+      </div>
+      <p>호기심을 원동력 삼아 끊임없이 도전하며 나아가는 주니어 개발자</p>
+      <div class="footer-links">
+        <a href="https://github.com/takeitEasyhwan">GitHub</a>
+        <a href="https://www.instagram.com/_nxwhxj">Instagram</a>
+        <a href="https://velog.io/@wlghks0508/posts">Velog</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Toggle job details visibility
+    document.getElementById('job-button').addEventListener('click', function() {
+      const jobDetails = document.getElementById('job-details');
+      const chevron = this.querySelector('.chevron');
+      
+      if (jobDetails.classList.contains('hidden')) {
+        jobDetails.classList.remove('hidden');
+        jobDetails.classList.add('visible');
+        chevron.textContent = '▲';
+      } else {
+        jobDetails.classList.remove('visible');
+        jobDetails.classList.add('hidden');
+        chevron.textContent = '▼';
+      }
+    });
+
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('nav a').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href');
+        const targetElement = document.querySelector(targetId);
+        
+        window.scrollTo({
+          top: targetElement.offsetTop - 80,
+          behavior: 'smooth'
+        });
+      });
+    });
+
+    // Particles.js 설정
+    particlesJS('particles-js', {
+      particles: {
+        number: {
+          value: 80,
+          density: {
+            enable: true,
+            value_area: 800
+          }
+        },
+        color: {
+          value: '#ffffff'
+        },
+        shape: {
+          type: 'circle'
+        },
+        opacity: {
+          value: 0.5,
+          random: false
+        },
+        size: {
+          value: 3,
+          random: true
+        },
+        line_linked: {
+          enable: true,
+          distance: 150,
+          color: '#ffffff',
+          opacity: 0.4,
+          width: 1
+        },
+        move: {
+          enable: true,
+          speed: 2,
+          direction: 'none',
+          random: false,
+          straight: false,
+          out_mode: 'out',
+          bounce: false
+        }
+      },
+      interactivity: {
+        detect_on: 'canvas',
+        events: {
+          onhover: {
+            enable: true,
+            mode: 'grab'
+          },
+          onclick: {
+            enable: true,
+            mode: 'push'
+          },
+          resize: true
+        }
+      },
+      retina_detect: true
+    });
+
+    // 경력 상세 설명 토글
+    document.querySelectorAll('.experience-header').forEach(function(header) {
+      header.addEventListener('click', function() {
+        const desc = this.parentElement.querySelector('.experience-description');
+        if(desc) desc.classList.toggle('hidden');
+      });
+    });
+  </script>
+</body>
+</html>
