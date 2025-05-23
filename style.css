@@ -33,6 +33,30 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom: 0.75em;
+    position: relative;
+    animation: sparkle 2s ease-in-out infinite;
+  }
+  
+  @keyframes sparkle {
+    0% {
+      text-shadow: 
+        0 0 10px rgba(255, 255, 255, 0.5),
+        0 0 20px rgba(255, 255, 255, 0.3),
+        0 0 30px rgba(255, 255, 255, 0.2);
+    }
+    50% {
+      text-shadow: 
+        0 0 20px rgba(255, 255, 255, 0.8),
+        0 0 30px rgba(255, 255, 255, 0.6),
+        0 0 40px rgba(255, 255, 255, 0.4),
+        0 0 50px rgba(255, 255, 255, 0.2);
+    }
+    100% {
+      text-shadow: 
+        0 0 10px rgba(255, 255, 255, 0.5),
+        0 0 20px rgba(255, 255, 255, 0.3),
+        0 0 30px rgba(255, 255, 255, 0.2);
+    }
   }
   
   h3 {
@@ -629,4 +653,51 @@
 
   .hidden {
     display: none;
+  }
+
+  .profile-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 2rem;
+    border: 3px solid #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .name {
+    font-size: 4.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    position: relative;
+    color: #fff;
+    text-shadow: 
+      0 0 10px rgba(79, 172, 254, 0.5),
+      0 0 20px rgba(79, 172, 254, 0.3),
+      0 0 30px rgba(79, 172, 254, 0.2);
+    animation: glow 2s ease-in-out infinite alternate;
+  }
+
+  @keyframes glow {
+    from {
+      text-shadow: 
+        0 0 10px rgba(79, 172, 254, 0.5),
+        0 0 20px rgba(79, 172, 254, 0.3),
+        0 0 30px rgba(79, 172, 254, 0.2);
+    }
+    to {
+      text-shadow: 
+        0 0 20px rgba(79, 172, 254, 0.8),
+        0 0 30px rgba(79, 172, 254, 0.6),
+        0 0 40px rgba(79, 172, 254, 0.4),
+        0 0 50px rgba(79, 172, 254, 0.2);
+    }
   }
