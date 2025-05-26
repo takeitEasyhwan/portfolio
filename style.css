@@ -507,22 +507,22 @@
     color: #ccc;
   }
   
-  .project-details li {
+  .project-details ul li {
     margin-bottom: 0.5rem;
   }
   
-  .project-details a {
+  .project-details ul li a {
     color: #FF9800;
     text-decoration: none;
     transition: all 0.3s ease;
     position: relative;
   }
   
-  .project-details a:hover {
+  .project-details ul li a:hover {
     color: #FFB74D;
   }
   
-  .project-details a::after {
+  .project-details ul li a::after {
     content: '';
     position: absolute;
     width: 100%;
@@ -535,7 +535,7 @@
     transition: transform 0.3s ease;
   }
   
-  .project-details a:hover::after {
+  .project-details ul li a:hover::after {
     transform: scaleX(1);
     transform-origin: left;
   }
